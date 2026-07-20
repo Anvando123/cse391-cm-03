@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --cm-primary-color: #0f766e;
+  --cm-bg-color: #f8fafc;
+
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI",sans-serif;
+  background-color: var(--cm-bg-color);
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+.cm-header {
+  background-color: var(--cm-primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.cm-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.cm-nav {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.cm-nav li {
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+.cm-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.cm-nav a:hover {
+  text-decoration: underline;
+}
+.cm-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+}
+
+.cm-table th,
+.cm-table td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: .5rem .75rem;
+    text-align: left;
+}
+
+.cm-table thead {
+    background-color: var(--cm-primary-color);
+    color: white;
+}
+
+.cm-table tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+.cm-table tbody tr:hover {
+    background : #ccfbf1;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: .5rem;
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: .25rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--cm-primary-color);
+}
+
+button {
+    background-color: var(--cm-primary-color);
+    color: white;
+    border: none;
+    padding: .6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b5d57;
+}
+
+fieldset {
+   max-width: 30rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
